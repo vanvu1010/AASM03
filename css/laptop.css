@@ -1,37 +1,37 @@
-
-body {
-    /* text-align: center; */
-	overflow-x: hidden;
-    width:1270px;
-    margin: 0 auto;
+body{
+    
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
 }
+@media screen and (min-width:992px) {
+    
 .bg-grey {
     background: #f7f7f7;
 }
-
-
 /* banner */
-img.banner-img {
-    position: relative;
+img.img-kt{
     filter:brightness(50%);
-    height: 358px;
-    width:1270px;
+    width: 100%;
+    height: 300px;
 }
-#banner h1{
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    top: 85px;
-    left: 680px;
-    color: #f7f7f7;
-    font-size: 40px;
-}
-#banner span{
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    top: 131px;
-    right: 724px;
+span.mobile{
+    position: relative;
+    bottom: 232px;
     color: #8f9294;
-    font-size: 13px;
+    font-size: 15px;
+    text-align: center;
+}
+#container-text{
+    text-align: center;
+}
+
+h1.h1{
+    position: relative;
+    bottom: 222px;
+    font-size: 2.5rem;
+    color: #f7f7f7;
+    text-align: center;
 }
 /* end banner */
 /* menu nav */
@@ -39,14 +39,14 @@ section > .container{
     
     font-family: 'Open Sans', sans-serif;
     border-bottom:1px solid #e2e5e7;
-    width: 1170px;
+    width: 80%;
     margin: auto;
     display: block;
     padding: 0px 50px;
 }
 
 #nav-bar {
-    bottom: 21px;
+    bottom: 101px;
     position: relative;
     text-align: center;
 }
@@ -121,9 +121,10 @@ i.icon-star-1{
 /* end nav */
 /* muc tieu  */
 #about.bg-grey{
+    width: 98%;
     position: relative;
-    bottom: 21px;
-    
+    bottom: 102px;
+    left: 11px;
 }
 .section-title-target{
     color: black;
@@ -148,9 +149,11 @@ h1.section-title-target{
 }
 /* info ca nhan */
 #personal-info{
+    position: relative;
+    left: 11px;
     background-color: #e2e5e7;
     padding-top: 30px;
-    height: 290px;
+    height: 311px;
 
 }
 #personal-info h1{
@@ -189,10 +192,11 @@ i.icon-gplus{
 i.icon-linkedin{
     color: #39aae0;
 }
+
 /* thong tin nghe nghiep hoc van */
 #job-info{
     position: relative;
-    bottom: 28px;
+    bottom: 74px;
 }
 .container-job{
     padding-left: 270px;
@@ -202,13 +206,15 @@ i.icon-linkedin{
     margin-top: 25px;
 }
 /* kinh nghiem */
-.experience {
+#experience {
     position: relative;
-    right: 34px;
-    width: 250px;
+    left: 174px;
+    /* right: 34px; */
+    width: 23%;
     display: inline-block;
     border: 1px solid #e2e5e7;
 }
+
 ul.job {
     font-size: 12px;
     color:#39aae0;
@@ -237,32 +243,32 @@ ul.job li span{
     display: inline-block;
     border-radius: 16px;
 }
-.experience h1{
+#experience h1{
     margin-top: 35px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     display: inline-block;
     padding-left: 24px;
 }
 i.ic-toolbox{
     color: #8f9294;
-    font-size: 32px;
+    font-size: 22px;
     position: relative;
-    left: 23px;
+    left: 7px;
 }
 /* hoc van */
-.study{
+#study{
     height: 350px;
-    width: 250px;
+    width: 20%;
     display: inline-block;
-    right: 93px;
+    left: 199px;
     position: relative;
     border: 1px solid #e2e5e7;
 }
-.study h1{
+#study h1{
     margin-top: 36px;
     padding-left: 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
 }
 ul.study-CC{
@@ -286,33 +292,36 @@ ul.study-CC h4{
 }
 i.ic-pencil{
     position: relative;
-    font-size: 32px;
-    left: 187px;
-    bottom: 42px;
+    font-size: 22px;
+    left: 135px;
+    bottom: 36px;
     color: #8f9294;
 }
 /* hoat dong */
-.activity{
-    height: 290px;
-    width: 250px;
+#activity{
+  height: 290px;
+    width: 20%;
+    left: 233px;
+    bottom: -1px;
     display: inline-block;
-    right: 153px;
+    /* right: 153px; */
     position: relative;
     border: 1px solid #e2e5e7;
 }
 i#ic2.ic-toolbox  {
     position: relative;
-    font-size: 32px;
-    left: 188px;
-    bottom: 45px;
+    font-size: 22px;
+    left: 146px;
+    bottom: 33px;
     color: #8f9294;
+
 }
-.activity i{
+#activity i{
     font-size: 12px;
     color: #8f9294;
 }
-.activity h1{
-    font-size: 25px;
+#activity h1{
+    font-size: 20px;
     font-weight: 700;
     padding-left: 25px;
     margin-top: 38px;
@@ -333,36 +342,38 @@ ul.activity-hd p{
     color: #8f9294;
 }
 /* so thich */
-.interests {
+#interests {
     position: relative;
-    width: 250px;
+    left: 174px;
+    bottom: 0;
+    
+    width: 23%;
     height: 230px;
     display: inline-block;
     margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid #e2e5e7;
-    right: 34px;
 }
-.interests h1{
+#interests h1{
     padding-left: 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 39px;
 }
 i.ic-telescope{
     position: relative;
     /* display: inline-block; */
-    font-size: 42px;
+    font-size: 33px;
     bottom: 51px;
-    left: 173px;
+    left: 138px;
     color: #8f9294;
 }
 .interests-ic{
-    width: 50px;
-    height: 50px;
-    margin-left: 13px;
+    width: 45px;
+    height: 45px;
+    margin-left: 18px;
     border-radius: 50%;
-    border: 1px solid  #39aae0;
+    border: 1px solid #39aae0;
 }
 
 .ic-megaphone {
@@ -377,11 +388,11 @@ p.ic-mega{
 }
 .strategy-ic{
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: relative;
-    left: 71px;
-    bottom: 83px;
+    left: 73px;
+    bottom: 79px;
     border-radius: 50%;
     border: 1px solid #39aae0;
 }
@@ -394,16 +405,16 @@ p.ic-stra{
     position: relative;
     font-size: 12px;
     color: #8f9294;
-    left: 71px;
-    bottom: 84px;
+    left: 67px;
+    bottom: 79px;
 
 }
 .hotairballoon-ic {
     text-align: center;
     position: relative;
-    width: 50px;
-    height: 50px;
-    bottom: 168px;
+    width: 45px;
+    height: 45px;
+    bottom: 157px;
     left: 129px;
     border-radius: 50%;
     border: 1px solid #39aae0;
@@ -416,20 +427,19 @@ i.ic-hotairballoon{
 p.ic-hotair{
     position: relative;
     left: 135px;
-    bottom: 168px;
+    bottom: 158px;
     font-size: 12px;
     color: #8f9294;
 }
 .basket-ic{
-    text-align: center;
-    left: 187px;
+    left: 182px;
     text-align: center;
     border-radius: 50%;
     border: 1px solid #39aae0;
     position: relative;
-    width: 50px;
-    height: 50px;
-    bottom: 252px;
+    width: 45px;
+    height: 45px;
+    bottom: 237px;
 }
 i.ic-basket {
     margin-top: 7px;
@@ -438,57 +448,60 @@ i.ic-basket {
 }
 p.ic-bas{
     position: relative;
-    left: 193px;
-    bottom: 252px;
+    left: 185px;
+    bottom: 236px;
     font-size: 12px;
     color: #8f9294;
 }
 .icon{
+    padding-left: 6%;
     position: relative;
     bottom: 17px;
+    right: 24px;
 }
 /* ngon ngu  */
-.language {
-    right: 94px;
+
+#language {
     position: relative;
-    width: 250px;
+    left: 198px;
+    width: 20%;
     height: 172px;
     margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid #e2e5e7;
-    bottom: 91px;
+    bottom: 64px;
 }
 i.ic-mic{
    
     position: relative;
     bottom: 48px;
-    left: 196px;
-    font-size: 37px;
+    left: 138px;
+    font-size: 32px;
     color: #8f9294;
 
 }
 span.score{
     background: #199dcb;
-    display:inline-block;
+    display: inline-block;
     height: 2px;
     margin-right: 10px;
-    width: 45px;
+    width: 22px;
 }
 span.score-2{
     background: #e2e5e7;
-    display:inline-block;
+    display: inline-block;
     height: 2px;
     margin-right: 10px;
-    width: 45px;
+    width: 21px;
 }
 .score-div{
     position: relative;
     bottom: 65px;
     padding-left: 22px;
 }
-.language h1{
+#language h1{
     padding-left: 22px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 39px;
 }
@@ -512,16 +525,17 @@ p.score-J{
 }
 
 /* ky nang */
-.skills{
+#skills{
     position: relative;
-    right: 153px;
-    bottom: 152px;
-    width: 250px;
-    height: 310px;
+    left: 229px;
+    bottom: 127px;
+    width: 21%;
+    height: 307px;
     margin-top: 20px;
     font-family: 'Open Sans', sans-serif;
     border: 1px solid #e2e5e7;
 }
+
 .score-skill {
     position: relative;
     bottom: 44px;
@@ -530,13 +544,13 @@ p.score-J{
 i.ic-tools-2{
     position: relative;
     bottom: 45px;
-    left: 188px;
-    font-size: 33px;
+    left: 122px;
+    font-size: 30px;
     color: #8f9294;
 }
-.skills h1{
+#skills h1{
     padding-left: 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 39px;
 }
@@ -579,7 +593,6 @@ p.skill-4{
     padding-left: 25px;
     bottom: 71px;
 }
-
 /* chung chi - giai thuong */
 #certificate.bg-grey{
     position: relative;
@@ -587,14 +600,16 @@ p.skill-4{
     bottom: 80px;
 }
 .certificate{
-    position: relative;
-    left: 232px;
+   
     font-family: 'Open Sans', sans-serif;
 }
 h1#Cert.section{
+    width: 50%;
     font-size: 25px;
     font-weight: 700;
+    padding-left: 12%;
 }
+
 .cert{
     width: 810px;
     display: grid;
@@ -602,7 +617,7 @@ h1#Cert.section{
 }
 /* chung chi web */
 .Cert-web {
-    width: 400px;
+    width: 103%;
     height: 101px;
     border-right: 1px solid #d6c08d;
 }
@@ -627,9 +642,11 @@ img.Cert_WEB{
 /* chung chi java */
 .Cert-PRF {
     position: relative;
-    width: 635px;
+    /* right: -16px; */
+    width: 45%;
     height: 101px;
-    left: 6px;
+    left: 19px;
+  
 }
 img.Cert_PRF{
     width: 160px;
@@ -649,8 +666,12 @@ img.Cert_PRF{
     bottom: 96px;
 }
 .cert{
+    width: 70%;
+    margin-left: 12%;
+    /* padding-left: 13px; */
     height: 138px;
     border-bottom: 1px solid #d6c08d;
+  
 }
 img.Cert_DBI {
     padding-top: 2px;
@@ -658,9 +679,12 @@ img.Cert_DBI {
     height: 100px;
 }
 .cert-2{
-    padding-top: 40px;
+    width: 50%;
+    padding-top: 2%;
     height: 130px;
+    padding-left: 12%;
 }
+
 .cert-2 h4{
    font-size: 10px;
    position: relative;
@@ -681,12 +705,13 @@ img.Cert_DBI {
 }
 h1.section-titleda{
     font-family: 'Open Sans', sans-serif;
-    padding-left: 230px;
+    padding-left: 155px;
 }
 .project-01{
     position: relative;
-    left: 231px;
+    left: 60%;
 }
+
 .project-d{
     font-family: 'Open Sans', sans-serif;
     color: #8f9294;
@@ -779,14 +804,13 @@ tbody, td, tfoot, th, thead, tr {
 /* project 02 */
 .project-02{
     position: relative;
-    left: 175px;
+    left: 45%;
 }
 /* project 03 */
 .project-03{
     position: relative;
-    left: 122px;
+    left: 35%;
 }
-/* footer */
 #footer.bg-grey{
     text-align: center;
     height: 50px;
@@ -823,4 +847,5 @@ i.icon-github-circled{
     color: #39aae0;
     position: relative;
     top: 2px;
+}
 }

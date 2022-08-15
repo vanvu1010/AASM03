@@ -1,54 +1,56 @@
-/* tablet  rộng 768px*/
-@media (max-width:768px) {
+/* tablet  rộng 769px tro len*/
+body{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+}
+@media screen and (min-width:769px) and (max-width:991px) {
     
-    body {
-        /* text-align: center; */
-        overflow-x: hidden;
-        width:768px;
-        margin: 0 auto;
-    }
     .bg-grey {
         background: #f7f7f7;
     }
     /* banner */
-    img.banner-img {
-        position: relative;
+    img.img-kt{
         filter:brightness(50%);
-        height: 250px;
-        width:768px;
+        width: 100%;
+        height: 300px;
     }
-    #banner h1{
-        font-family: 'Open Sans', sans-serif;
-        position: absolute;
-        top: 70px;
-        left: 331px;
-        color: #f7f7f7;
-        font-size: 23px;
-    }
-    #banner span{
-        font-family: 'Open Sans', sans-serif;
-        position: absolute;
-        top: 95px;
-        right: 322px;
+    span.mobile{
+        position: relative;
+        bottom: 232px;
         color: #8f9294;
-        font-size: 11px;
+        font-size: 15px;
+        text-align: center;
     }
+    #container-text{
+        text-align: center;
+    }
+    
+    h1.h1{
+        position: relative;
+        bottom: 222px;
+        font-size: 2.5rem;
+        color: #f7f7f7;
+    }    
     /* end banner */
     /* nav */
     section > .container{
     
         font-family: 'Open Sans', sans-serif;
         border-bottom:1px solid #e2e5e7;
-        width: 1170px;
+       
+        width: 76%;
         margin: auto;
         display: block;
         padding: 0px 50px;
     }
     
     #nav-bar {
+        text-align: center;
         z-index: 1;
         position: relative;
-        bottom: 0;
+        bottom: 80px;
         
     }
     .container a{
@@ -120,16 +122,23 @@
     }
     
     /* end nav */
-        /* * muc tieu  */ 
+        
+    /* * muc tieu  */ 
     #about.bg-grey{
+        height: 290px;
+        width: 97%;
+        left: 9px;
         position: relative;
-        bottom: 0px;
+        bottom: 80px;
     }
     
     .container-info {
         display: grid;
         grid-template-columns: 50% auto;
         font-family: 'Open Sans', sans-serif;
+    }
+    #target h1{
+        font-size: 21px;
     }
     #target{
         padding-left: 66px;
@@ -142,12 +151,15 @@
     }
     /* info ca nhan */
     #personal-info{
+        position: relative;
+        left: 10px;
         background-color: #e2e5e7;
         padding-top: 30px;
         height: 290px;
 
     }
     #personal-info h1{
+        font-size: 21px;
         padding-left: 37px;
     }
     ul.mt-40.info {
@@ -189,10 +201,22 @@
         grid-template-columns: auto auto;
         font-family: 'Open Sans', sans-serif;
     }
-    /* kinh nghiem */
-    .experience {
+    /*thong tin */
+    #job-info{
         position: relative;
-        right: 243px;
+        top: 19px;
+    }
+    .container-job{
+        padding-left: 270px;
+        display: grid;
+        grid-template-columns: auto auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* kinh nghiem */
+    #experience {
+        position: relative;
+        bottom: 63px;
+        /* right: -4px; */
         width: 341px;
         display: inline-block;
         border: 1px solid #e2e5e7;
@@ -202,6 +226,7 @@
         color:#39aae0;
     }
     ul.job li h4{
+        font-size: 12px;
         color: black;
     }
     ul.job li p{
@@ -224,10 +249,11 @@
         display: inline-block;
         border-radius: 16px;
     }
-    .experience h1{
-        
+    #experience h1{
+        font-size: 20px;
+        font-weight: 700;
         display: inline-block;
-        padding-left: 25px;
+        padding-left: 24px;
     }
     i.ic-toolbox{
         color: #8f9294;
@@ -236,16 +262,19 @@
         left: 34px;
     }
     /* hoc van */
-    .study{
-        height: 273px;
-        width: 346px;
+    #study{
+        height: 260px;
+        width: 45%;
         display: inline-block;
-        right: 215px;
+        bottom: 65px;
+        left: 34px;
         position: relative;
         border: 1px solid #e2e5e7;
     }
-    .study h1{
-        padding-left: 25px;
+    #study h1{
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 700;
     }
     ul.study-CC{
         font-size: 12px;
@@ -269,20 +298,20 @@
     i.ic-pencil{
         position: relative;
         font-size: 30px;
-        left: 188px;
-        bottom: 54px;
+        left: 149px;
+        bottom: 42px;
         color: #8f9294;
     }
     /* hoat dong */
-    .activity{
+    #activity{
         height: 290px;
-        width: 341px;
+        width: 45%;
+        bottom: 134px;
+        left: 376px;
         display: inline-block;
-        left: 129px;
-        /* right: -134px; */
+        /* right: 153px; */
         position: relative;
         border: 1px solid #e2e5e7;
-        bottom: 69px;
     }
     i#ic2.ic-toolbox  {
         position: relative;
@@ -291,12 +320,15 @@
         bottom: 54px;
         color: #8f9294;
     }
-    .activity i{
+    #activity i{
         font-size: 12px;
         color: #8f9294;
     }
-    .activity h1{
+    #activity h1{
+        font-size: 20px;
+        font-weight: 700;
         padding-left: 25px;
+        margin-top: 38px;
     }
     ul.activity-hd{
         position: relative;
@@ -314,26 +346,29 @@
         color: #8f9294;
     }
     /* so thich */
-    .interests {
+    #interests {
         position: relative;
-        top: 344px;
-        width: 341px;
-        height: 200px;
+        left: 0;
+        bottom: 0;
+        width: 47%;
+        height: 230px;
         display: inline-block;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
-        right: 586px;
     }
-    .interests h1{
+    #interests h1{
         padding-left: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     i.ic-telescope{
         position: relative;
         /* display: inline-block; */
-        font-size: 38px;
-        bottom: 60px;
-        left: 173px;
+        font-size: 33px;
+        bottom: 51px;
+        left: 138px;
         color: #8f9294;
     }
     .interests-ic{
@@ -428,22 +463,22 @@
         bottom: 17px;
     }
     /* ngon ngu  */
-    .language {
-        left: 129px;
+    #language {
         position: relative;
-        width: 341px;
+        left: 39px;
+        width: 45%;
         height: 172px;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
-        bottom: 50px;
+        bottom: 116px;
     }
     i.ic-mic{
        
         position: relative;
         bottom: 54px;
         left: 196px;
-        font-size: px;
+        font-size: 30px;
         color: #8f9294;
     
     }
@@ -466,8 +501,11 @@
         bottom: 65px;
         padding-left: 22px;
     }
-    .language h1{
+    #language h1{
         padding-left: 22px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     p.score{
         font-size: 12px;
@@ -489,12 +527,12 @@
     }
     
     /* ky nang */
-    .skills{
+    #skills{
         position: relative;
-        right: 586px;
-        bottom: 286px;
-        width: 340px;
-        height: 310px;
+        left: 0px;
+        bottom: 589px;
+        width: 47%;
+        height: 307px;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
@@ -511,8 +549,11 @@
         font-size: 30px;
         color: #8f9294;
     }
-    .skills h1{
+    #skills h1{
         padding-left: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     p.skill{
         position: relative;
@@ -553,11 +594,12 @@
         padding-left: 25px;
         bottom: 71px;
     }
-    /* chung chi */
+     /* chung chi - giai thuong */
+
     #certificate.bg-grey{
         position: relative;
         height: 462px;
-        bottom: 5px;
+        bottom: 267px;
     }
     .certificate{
         position: relative;
@@ -566,8 +608,10 @@
     }
     h1#Cert.section-title{
         padding-top: 34px;
-     }
+    }
     .cert{
+        position: relative;
+        right: 33px;
         width: 720px;
         display: grid;
         height: 204px;
@@ -597,7 +641,7 @@
         left: 11px;
         bottom: 1px;
     }
-    
+
     /* chung chi java */
     .Cert-PRF {
         position: relative;
@@ -621,14 +665,16 @@
         left: 10px;
         bottom: 1px;
     }
-   
+
     img.Cert_DBI {
-        padding-top: 2px;
-        width: 160px;
-        height: 100px;
+        padding-top: 0px;
+        width: 48%;
+        height: 116%;
     }
     .cert-2{
-        padding-top: 40px;
+        position: relative;
+        right: 31px;
+        padding-top: 23px;
         height: 130px;
     }
     .cert-2 h4{
@@ -647,8 +693,8 @@
     /* du an  */
     #project{
         position: relative;
-        right: 206px;
-        top: 2px;
+        bottom: 250px;
+        right: 227px;
     }
     h1.section-titleda{
         font-family: 'Open Sans', sans-serif;
@@ -737,7 +783,7 @@
     table.cv tr, td{
         vertical-align: top;
         font-size: 12px;
-    
+
     }
     /* project 02 */
     .project-02{
@@ -763,9 +809,9 @@
         padding-right: 43px;
     }
     .container-footer {
-       font-family: 'Open Sans', sans-serif;
-       padding-top: 1px;
-       height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 1px;
+    height: 50px;
     }
     i.icon-facebook-circled{
         padding-top: 72px;

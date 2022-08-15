@@ -1,47 +1,49 @@
 /* mobile */
-@media(max-width:500px){
-    
-    body {
-        overflow-x: hidden;
-        width:500px;
-        margin: 0 auto;
-    }
+body{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+}
+@media screen and (max-width:768px){
+   
     .bg-grey {
         background: #f7f7f7;
     }
     /* banner */
-    img.banner-img {
-        position: relative;
+    img.img-kt{
         filter:brightness(50%);
-        height: 600px;
-        width:500px;
+        width: 100%;
+        height: 300px;
     }
-    #banner h1{
-        font-family: 'Open Sans', sans-serif;
-        position: absolute;
-        top: 125px;
-        left: 114px;
-        color: #f7f7f7;
-        font-size: 41px;
-    }
-    #banner span{
-        font-family: 'Open Sans', sans-serif;
-        position: absolute;
-        top: 176px;
-        right: 199px;
+    span.mobile{
+        position: relative;
+        bottom: 232px;
         color: #8f9294;
-        font-size: 16px;
+        font-size: 15px;
+        text-align: center;
+    }
+    #container-text{
+        text-align: center;
+    }
+    
+    h1.h1{
+        position: relative;
+        bottom: 222px;
+        font-size: 2.5rem;
+        color: #f7f7f7;
     }
     /* end banner */
     /* nav */
     section > .container{
-        font-family: 'Open Sans', sans-serif;
-       
+        font-family: 'Open Sans', sans-serif; 
     }
     
     #nav-bar {
+        width: 100%;
         position: relative;
-        right: 485px;
+        bottom: 30px;
+        left: 47px;
     }
     .container a{
         border: none;
@@ -53,6 +55,9 @@
     }
     .container a.a1{
        
+        position: relative;
+        right: 17px;
+        bottom: 41px;
         color: black;
         display: block;
         font-size: 12px;
@@ -61,8 +66,8 @@
     }
     .container a.a2{
         position: relative;
-        bottom: 27px;
-        right: 25px;
+        bottom: 33px;
+        right: 15px;
         color: black;
         font-size: 12px;
         display: block;
@@ -73,8 +78,8 @@
        
         color: black;
         position: relative;
-        bottom: 55px;
-        right: 14px;
+        bottom: 28px;
+        right: 15px;
         font-size: 12px;
         display: block;
         text-decoration: none;
@@ -84,8 +89,8 @@
        
         color: black;
         position: relative;
-        bottom: 81px;
-        right: 27px;
+        bottom: 22px;
+        right: 13px;
         font-size: 12px;
         display: block;
         text-decoration: none;
@@ -125,13 +130,12 @@
         right: 60px;
         color: #39aae0;
     }
-    
     /* end nav */
-        /* * muc tieu  */ 
+     /* * muc tieu  */ 
     #about.bg-grey{
-        width: 500px;
+        width: 100%;
         position: relative;
-        bottom: 74px;
+        bottom: 40px;
     }
     .container-info {
         display: grid;
@@ -141,7 +145,7 @@
     #target{
         padding-left: 32px;
         padding-top: 30px;
-        width: 500px;
+        width: 100%;
     }
     #target p{
         font-size: 12px;
@@ -154,12 +158,16 @@
     }
     /* info ca nhan */
     #personal-info{
+        position: relative;
+        bottom: -69px;
+        right: 10px;
         background-color: #e2e5e7;
-        width: 500px;
+        width: 104%;
         padding-top: 30px;
         height: 290px;
-
     }
+
+    
     #personal-info h1{
         padding-left: 37px;
     }
@@ -202,12 +210,83 @@
         grid-template-columns: auto ;
         font-family: 'Open Sans', sans-serif;
     }
-    /* kinh nghiem */
-    .experience {
+   
+    .container-info {
+        display: grid;
+        grid-template-columns: auto ;
+        font-family: 'Open Sans', sans-serif;
+    }
+  
+    #target p{
+        font-size: 12px;
+        padding-right: 76px;
+        color: #8f9294;
+    }
+    h1.section-title-target {
+        font-size: 23px;
+        font-weight: 700;
+    }
+    /* info ca nhan */
+   
+    #personal-info h1{
+        padding-left: 37px;
+    }
+    ul.mt-40.info {
+        list-style-type: none;
+    }
+    ul.mt-40.info li span {
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+    }
+    ul.mt-40.info li{
+        line-height: 1.8;
+        font-size: 12px;
+        color: #8f9294;
+    }
+    .personal-icon{
+        color: #8f9294;
+        padding-left: 36px;
+    }
+    i.icon-facebook{
+        color: #39aae0;
+    }
+    i.icon-twitter{
+        color: #39aae0;
+    }
+    i.icon-gplus{
+        color: #39aae0;
+    }
+    i.icon-linkedin{
+        color: #39aae0;
+    }
+    #job-info{
         position: relative;
-        bottom: 84px;
-        right: 261px;
-        width: 500px;
+        top: 19px;
+    }
+    .container-job{
+       
+        display: grid;
+        grid-template-columns: auto ;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /*thoing tin */
+    #job-info{
+        position: relative;
+        top: 19px;
+    }
+    .container-job{
+       
+        display: grid;
+        grid-template-columns: auto ;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* kinh nghiem */
+    #experience {
+        position: relative;
+        top:44px;
+        /* right: -4px; */
+        width: 100%;
         display: inline-block;
         border: 1px solid #e2e5e7;
     }
@@ -216,6 +295,7 @@
         color:#39aae0;
     }
     ul.job li h4{
+        font-size: 12px;
         color: black;
     }
     ul.job li p{
@@ -238,10 +318,13 @@
         display: inline-block;
         border-radius: 16px;
     }
-    .experience h1{
+    #experience h1{
         
+        margin-top: 35px;
+        font-size: 20px;
+        font-weight: 700;
         display: inline-block;
-        padding-left: 25px;
+        padding-left: 24px;
     }
     i.ic-toolbox{
         color: #8f9294;
@@ -250,17 +333,19 @@
         left: 34px;
     }
     /* hoc van */
-    .study{
-        height: 350px;
-        width: 500px;
+    #study{
+        height: 260px;
+        width: 100%;
         display: inline-block;
-        right: 259px;
-        bottom: 62px;
+        bottom: -74px;
+        left: 0px;
         position: relative;
         border: 1px solid #e2e5e7;
     }
-    .study h1{
-        padding-left: 25px;
+    #study h1{
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 700;
     }
     ul.study-CC{
         font-size: 12px;
@@ -284,18 +369,20 @@
     i.ic-pencil{
         position: relative;
         font-size: 30px;
-        left: 188px;
-        bottom: 54px;
+        left: 156px;
+        bottom: 38px;
         color: #8f9294;
     }
     /* hoat dong */
-    .activity{
+    #activity{
         height: 290px;
-        width: 500px;
-        left: -259px;
+        width: 100%;
+        top: 96px;
+        left: 0;
+        display: inline-block;
+        /* right: 153px; */
         position: relative;
         border: 1px solid #e2e5e7;
-        bottom: 47px;
     }
     i#ic2.ic-toolbox  {
         position: relative;
@@ -304,12 +391,15 @@
         bottom: 54px;
         color: #8f9294;
     }
-    .activity i{
+    #activity i{
         font-size: 12px;
         color: #8f9294;
     }
-    .activity h1{
+    #activity h1{
+        font-size: 20px;
+        font-weight: 700;
         padding-left: 25px;
+        margin-top: 38px;
     }
     ul.activity-hd{
         position: relative;
@@ -327,19 +417,23 @@
         color: #8f9294;
     }
     /* so thich */
-    .interests {
+    #interests {
         position: relative;
-        top: 473px;
-        width: 500px;
+        left: 0;
+        top: 611px;
+        /* bottom: 0; */
+        width: 100%;
         height: 230px;
         display: inline-block;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
-        right: 264px;
     }
-    .interests h1{
+    #interests h1{
         padding-left: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     i.ic-telescope{
         position: relative;
@@ -440,15 +534,16 @@
         bottom: 17px;
     }
     /* ngon ngu  */
-    .language {
-        left: -264px;
+    #language{
         position: relative;
-        width: 500px;
+        top: 173px;
+        left: 0;
+        width: 100%;
         height: 172px;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
-        bottom: -28px;
+      
     }
     i.ic-mic{
        
@@ -478,8 +573,11 @@
         bottom: 65px;
         padding-left: 22px;
     }
-    .language h1{
+    #language h1{
         padding-left: 22px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     p.score{
         font-size: 12px;
@@ -501,16 +599,17 @@
     }
     
     /* ky nang */
-    .skills{
+    #skills{
         position: relative;
-        bottom: 491px;
-        width: 500px;
-        height: 310px;
+        left: 0px;
+        bottom: 344px;
+        width: 100%;
+        height: 307px;
         margin-top: 20px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid #e2e5e7;
-        right: 261px;
     }
+    
     .score-skill {
         position: relative;
         bottom: 44px;
@@ -523,8 +622,11 @@
         font-size: 30px;
         color: #8f9294;
     }
-    .skills h1{
+    #skills h1{
         padding-left: 25px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 39px;
     }
     p.skill{
         position: relative;
@@ -565,11 +667,11 @@
         padding-left: 25px;
         bottom: 71px;
     }
-    /* chung chi */
-    #certificate.bg-grey{
+      /* chung chi */
+      #certificate.bg-grey{
         position: relative;
+        top: 140px;
         height: 684px;
-        bottom: 5px;
     }
     .certificate{
         position: relative;
@@ -668,7 +770,7 @@
     /* du an  */
     #project{
         position: relative;
-        top: 7px;
+        top: 153px;
         right: 204px;
     }
     h1.section-titleda{
@@ -688,8 +790,8 @@
         grid-template-columns: auto;
     }
     img.project-01-i{
-        width: 500px;
-        height: 146px;
+        width: 100%;
+        height: 300px;
     }
     .type-cv{
         position: relative;
@@ -772,26 +874,28 @@
         top :33px;
         left: 218px;
     }
-    /* footer */
+   /* footer */
     #footer.bg-grey{
-        position: relative;
-        top: 900px;
         margin-top: 20px;
         text-align: center;
+        left: 4%;
+        width: 100%;
         height: 50px;
+        position: relative;
+        /* bottom: 8px; */
+        top: 1500px;
     }
     ul.footer-f li{
-        color: #e6e8e9;
+        color:#f7f7f7;
         font-size: 12px;
         list-style-type: none;
         display: inline-block;
-        padding-right: 0px;
+        padding-right: 43px;
     }
     .container-footer {
-       font-family: 'Open Sans', sans-serif;
-       background-color:#e6e8e9 ;
-       padding-top: 1px;
-       height: 50px;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 1px;
+        height: 50px;
     }
     i.icon-facebook-circled{
         padding-top: 72px;
@@ -813,5 +917,9 @@
         color: #39aae0;
         position: relative;
         top: 2px;
+    }
+    dl, ol, ul {
+        margin-top: 8px;
+        margin-bottom: 1rem;
     }
 }
